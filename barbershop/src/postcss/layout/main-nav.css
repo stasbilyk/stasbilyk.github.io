@@ -1,0 +1,236 @@
+:root{
+    --main-nav-color: rgba(130, 101, 80, 1);
+}
+
+.bodyoverflow{
+    overflow: hidden;
+}
+
+.main-nav{
+    background: var(--main-nav-color);
+    position: relative;
+}
+
+.main-nav__button{
+    position: absolute 0 0 * *;
+    size: 70px 100%;
+    font-size: 30px;  
+    @mixin center;
+    color: rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out;
+    background: rgba(106, 77, 56, 1);
+    cursor: pointer;
+    i{
+        font-style: normal;
+    }
+}
+
+.main-nav__button:hover{
+     background: rgba(117, 90, 70, 1);
+}
+
+.main-nav__button:active{
+     background: rgba(106, 77, 56, 1);
+}
+
+.main-nav__button>i{
+    font-family: "FontAwesome";
+}
+
+.main-nav__button>i:active{
+    color: rgba(255, 255, 255, .6);
+    transition: all .2s ease-in-out;
+}
+
+.main-nav__button-active{
+    right: 240px;
+}
+
+.main-nav__wrap{ 
+    box-shadow: inset 3px 0 5px rgba(0, 0, 0, .2);
+    height: 100vh;
+    position: absolute 0 0 * *;
+    background: rgba(106, 77, 56, 1);
+    right: -100%;
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+
+.main-nav__wrap-active{
+    right: 0;
+    display: block;
+}
+
+.main-nav__item{
+    background: var(--main-nav-color); 
+    box-shadow: inset 3px 0 5px rgba(0, 0, 0, .2);
+    border-top: 1px solid rgbs(136, 110, 91, 1);
+    border-bottom: 1px solid rgba(113, 84, 63, 1);
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+.main-nav__item:hover{
+    background: rgba(117, 90, 70, 1); 
+}
+
+.main-nav__item:active{
+    background: rgba(106, 77, 56, 1); 
+}
+
+.main-nav__link{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 120px 15px 20px;
+    display: block;
+    border-bottom: 3px solid rgba(130, 101, 80, 0);
+}
+
+.main-nav__link:active{
+    color: rgba(255, 255, 255, .6);
+    transition: all .1s ease-in-out;
+}
+
+.main-nav__page-title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main-nav__link-login{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 0 15px 20px;
+    display: flex;
+}
+
+.enter{
+    margin-left: 10px;
+}
+
+@media(--medium){
+
+    .main-nav { 
+        order: 1;
+        background: rgba(0, 0, 0, 1);
+        @mixin container;
+    }
+    .main-nav__wrap {
+        height: auto;
+        position: static;
+        display: flex;
+        background: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav__list {
+        display: flex;
+    }
+    .main-nav__page-title, 
+    .main-nav__button,
+    .enter {
+        display: none;
+    }
+  
+    .main-nav__link{
+        border-bottom: 3px solid transparent;
+        padding: 20px 15px;
+        transition: all .2s ease-in;
+    }
+
+    .main-nav__link:hover{
+        color: rgba(130, 101, 80, 1);
+    }
+
+    .main-nav__link:active{
+        color: rgba(213, 213, 213, 1);
+    }
+
+    .main-nav__link-login{
+        padding: 24px 15px;
+        transition: all .2s ease-in;
+    }
+
+    .main-nav__link-login>i{
+        color: rgba(77, 77, 77, 1);
+    }
+
+    .main-nav__link-login>i:hover{
+        color: rgba(130, 101, 80, 1);
+    }
+
+    .main-nav__link-login>i:active{
+        color: rgba(213, 213, 213, 1);
+    }
+
+    .main-nav__link-login:active{
+        color: rgba(213, 213, 213, 1);
+    }
+
+    .main-nav__item{
+        background: none;
+        @mixin center;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .active{
+        border-bottom: 3px solid rgba(130, 101, 80, 1);
+    }
+}
+
+@media(--large){
+
+    .enter {
+        display: block;
+        margin-left: 15px;
+    }
+
+    .active{
+        border-bottom: 3px solid rgba(130, 101, 80, 1);
+    }
+
+    .main-nav__link:hover{
+        border-bottom-color: rgba(130, 101, 80, 1);
+        background: rgba(255, 255, 255, 1);
+        color: #000;
+    }
+
+    .main-nav__link:active{
+        color: rgba(213, 213, 213, 1);
+    }
+
+    .main-nav__link-login:hover{
+        border-bottom-color: rgba(130, 101, 80, 1);
+        background: rgba(255, 255, 255, 1);
+        color: #000;
+    }
+
+    .main-nav__link-login:active{
+        color: rgba(213, 213, 213, 1);
+    }
+
+}
+
+
+
+
+
+
+
+
+

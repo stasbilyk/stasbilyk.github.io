@@ -1,0 +1,133 @@
+i{
+    font-style: normal;
+}
+
+.social__list{
+    display: flex;
+}
+
+.social__link{
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    @mixin center;
+    width:100%;
+    padding: 20px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height:100%;
+}
+
+.social__link:active{
+    color: rgba(128, 128, 128, 1);
+}
+
+.social__item{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    flex: 1 0;
+    border-top: 1px solid rgba(62, 62, 62, 1);
+    border-bottom: 1px solid rgba(62, 62, 62, 1);
+}
+
+.social__item:hover{
+    border-top: 1px solid rgba(84, 84, 84, 1);
+    border-bottom: 1px solid rgba(84, 84, 84, 1);
+}
+
+.social__item:active{
+    background: rgba(37, 37, 37, 1);
+    border: none;
+}
+
+.social__item:not(:last-child){
+    border-right: 1px solid rgba(62, 62, 62, 1);
+}
+
+.social__text{
+        display: none;
+    }
+
+@media(--medium){
+    .social{
+        order: 3;
+        width: 100%;
+    }
+
+    .social__list{
+        border-top: 1px solid rgba(62, 62, 62, 1);
+        border-bottom: 1px solid rgba(62, 62, 62, 1);
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .social__item{
+         border-top: none;
+         border-bottom: none;
+    }
+
+    .social__item:first-child{
+        border-left: 1px solid rgba(62, 62, 62, 1);
+    }
+
+    .social__item:last-child{
+        border-right: 1px solid rgba(62, 62, 62, 1);
+    }
+
+    .social__text{
+        display: none;
+    }
+}
+
+@media(--large){
+
+    .social{
+        order: 2;
+        flex: 0;
+        /*@mixin center;*/
+        text-align: center; 
+    }
+
+    .social__link{
+        font-size: 18px;
+        padding: 15px;
+        width: 50px;
+    }
+
+    .social__item{
+        flex: 0;
+        border: 1px solid rgba(62, 62, 62, 1);
+        margin-right: 5px;
+        @mixin center;
+    }
+
+    .social__item:hover{
+        border: 1px solid rgba(84, 84, 84, 1);
+        border: 1px solid rgba(84, 84, 84, 1);
+    }
+
+    .social__item:active{
+        background: rgba(37, 37, 37, 1);
+        border: none;
+    }
+
+    .social__list{
+        flex: 1;
+        border-top: none;
+        border-bottom: none;
+        @mixin center;
+        margin-top: 20px;
+    }
+
+    .social__text{
+        display: block;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        padding-top: 35px;
+    }
+}
+
+ 

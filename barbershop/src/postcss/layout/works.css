@@ -1,0 +1,258 @@
+.works{
+    background: rgba(255, 255, 255, 1);
+    padding: 30px 20px 60px 20px;
+}
+
+.works__list{
+    margin-top: 30px;
+}
+
+.works__item:not(:first-child){
+    margin-top: 20px;
+}
+
+.works__item-photo img{
+    width: 100%;
+    display: block;
+}
+
+.works__item-photo{
+    position: relative;
+}
+
+.label:after{
+    content: '';
+    position: absolute;
+    max-width: 100%;
+    width: 176px;
+    height: 50px;
+    top: calc(100% - 90px);
+    left: 0;
+    background: url('../img/label_foto_works_1.png') center center no-repeat;
+    background-size: cover;
+    @mixin center;
+    z-index: 1;
+}
+
+.label:after{
+    content: 'работа месяца';
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+.works__item-desc{
+    text-align: left;
+    padding: 20px;
+    border-left: 1px solid rgba(229, 221, 213, 1);
+    border-right: 1px solid rgba(229, 221, 213, 1);
+    border-bottom: 1px solid rgba(229, 221, 213, 1);
+}
+
+.works__item-desc-name{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.works__item-desc-text{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 20px;
+}
+.works__item-labels{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.label-icon{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-icon-desc{
+    margin-left: 10px;
+}
+
+.block-button{
+    display: none;
+}
+
+@media (--medium){
+
+    .works-wrap{
+        background: #fff;
+    }
+
+    .works{
+        margin: 0;
+        padding: 50px 0 95px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        @mixin container;
+    }
+
+    .works__list{
+        margin-top: 35px;
+        order: 3;
+    }
+
+    .works__item{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .works__item-photo:not(:first-child){
+       width: 294px;
+       height: 294px;
+    }
+
+    .works__item-desc{
+        flex: 1 0;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: left;
+        padding: 45px 100px 35px 45px;
+        border-left: none;
+        border-top: 1px solid rgba(229, 221, 213, 1);
+        border-right: 1px solid rgba(229, 221, 213, 1);
+        border-bottom: 1px solid rgba(229, 221, 213, 1);
+    }
+
+    .works__item-desc-text{
+        padding-top: 30px;
+    }
+
+    .works__item-labels{
+        display: flex;
+        flex: 1 0;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .label-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .label:after{
+        content: '';
+        position: absolute;
+        max-width: 100%;
+        width: 176px;
+        height: 50px;
+        top: calc(100% - 440px);
+        left: 0;
+        background: url('../img/label_foto_works_1.png') center center no-repeat;
+        background-size: cover;
+        @mixin center;
+        z-index: 1;
+    }
+
+    .label:after{
+        content: 'работа месяца';
+        position: absolute;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+    }
+
+    .block-button{
+        display: block;
+        order: 2;
+    }
+}
+
+@media(--large){
+
+    .works{
+        padding: 50px 0 80px;
+    }
+
+    .works__list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .works__item:first-child{
+        margin: 0;
+    }
+
+    .works__item:not(:first-child){
+        margin-top: 40px;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 30%;   
+    }
+
+    .works__item:nth-child(2){
+        margin-right: 48px;
+    }
+
+    .works__item:nth-child(3){
+        margin-right: 48px;
+    }
+
+   .works__item:not(:first-child)>.works__item-desc{
+        padding: 30px;
+        border-left: 1px solid rgba(229, 221, 213, 1);
+        border-top: none;
+        border-right: 1px solid rgba(229, 221, 213, 1);
+        border-bottom: 1px solid rgba(229, 221, 213, 1);
+    }
+   
+   .works__item-photo:not(:first-child){
+       width: 294px;
+       height: 294px;
+   }
+
+   .works__item:first-child > .works__item-desc > .works__item-desc-name{
+       padding-top: 80px;
+    }
+
+  .label:after{
+        content: '';
+        position: absolute;
+        max-width: 100%;
+        width: 176px;
+        height: 50px;
+        top: calc(100% - 440px);
+        left: 785px;
+        background: url('../img/label_foto_works_1_desctop.png') center center no-repeat;
+        background-size: cover;
+        @mixin center;
+        z-index: 1;
+    }
+
+    .label:after{
+        content: 'работа месяца';
+        position: absolute;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+    }
+
+
+}

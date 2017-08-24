@@ -1,0 +1,17 @@
+@import "misc/mixin.css";
+@import "misc/adjustment.css";
+@import "layout/responsive.css";
+@import "layout/page-header.css";
+@import "layout/main-nav.css";
+@import "layout/main-footer.css";
+@import "layout/contacts.css";
+@import "layout/social.css";
+@import "layout/statistic.css";
+@import "layout/second_block.css";
+@import "layout/third_block.css";
+@import "layout/reviews.css";
+@import "layout/modal-window.css";
+@import "layout/works.css";
+@import "layout/pricelist.css";
+@import "layout/registration.css";
+@import "layout/modal-window-failure.css";

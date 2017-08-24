@@ -1,0 +1,68 @@
+
+/************************/
+/* Media queries 		*/
+/************************/
+
+@custom-media --large ( width >= 1200px );
+@custom-media --medium (width >= 770px);
+
+
+/************************/
+/* font + lineHeight 	*/
+/************************/
+
+@define-mixin fontSize $size: 14px {
+
+	font-size: calc($size)px;
+	line-height: calc($size+2)px;
+}
+
+
+/************************/
+/* center element 		*/
+/************************/
+
+@define-mixin center {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/************************/
+/* container 			*/
+/************************/
+
+@define-mixin container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media (--large) {
+		width: 960px;
+	}
+	@media (--medium) {
+		width: 750px;
+	}
+	@media (--small) {
+		width: auto;
+	}
+}
+
+
+/************************/
+/* font 				*/
+/************************/
+
+@define-mixin Font $fw: normal {
+
+	@if $fw == bold {
+
+		font-weight: 700;
+	}
+	@if $fw == thin {
+
+		font-weight: 100;
+	}
+}
+

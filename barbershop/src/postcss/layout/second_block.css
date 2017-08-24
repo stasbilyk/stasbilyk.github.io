@@ -1,0 +1,129 @@
+.second-block{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: var(--header-color);
+}
+
+.second-block__item{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.second-block__logo{
+    padding-top: 40px;
+}
+
+.second-block__title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+}
+
+.second-block__desc{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    padding: 25px 40px;
+}
+
+.second-block__text{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (--medium){
+
+
+    .second-block{
+       @mixin container;
+    }
+
+    .second-block__item{
+        display: flex;
+        flex-flow: row nowrap; 
+        padding: 45px 0px;
+        background: rgba(41, 41, 41, 1);
+    }
+
+    .second-block__item:not(:last-child){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .second-block__logo{
+        width: 160px;
+        padding: 0 30px;
+    }
+
+    .second-block__text{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .second-block__desc{
+        padding: 15px 0 0 0 ;
+        text-align: left;
+    }
+
+    .second-block__title{
+        padding: 0;
+    }
+}
+
+@media(--large){
+
+    .second-block{
+        display: flex;
+    }
+
+    .second-block__list{
+        display: flex;
+        width: 100%;  
+    }
+
+    .second-block__item{
+        box-sizing: border-box;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        width: 320px;
+        margin: 0;
+    }
+
+     .second-block__item:not(:last-child){
+        border-bottom: none;
+    }
+
+    .second-block__text{
+        align-items: center;
+    }
+
+    .second-block__desc{
+        text-align: center;
+
+    }
+
+    .second-block__logo{
+        width: auto;
+        padding: 30px 0 0 0 ;
+        text-align: center;
+    }
+
+    .second-block__title{
+        padding-top: 30px;
+    }
+}

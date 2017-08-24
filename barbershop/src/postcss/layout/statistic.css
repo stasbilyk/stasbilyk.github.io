@@ -1,0 +1,209 @@
+
+.statistic__desk{
+    text-align: center;
+    padding: 30px 35px;
+    background: #fff;
+}
+
+.statistic__desk-title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.statistic__desk-text{
+    display: block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.statistic__item{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    /*&:nth-child(2n) {
+
+    }
+
+    &:nth-child(2n+1) {
+
+    }*/
+}
+
+
+.statistic__block-dark-grey{
+    background: rgba(64, 64, 64, 1);
+}
+
+.statistic__block-light-grey{
+    background: rgba(78, 78, 78, 1);
+}
+
+.statistic__count{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.statistic__count-desc{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.statistic__text--bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(127, 127, 127, 1);
+    background: var(--header-color);
+}
+
+.statistic__text--top{
+        display: none;
+}
+
+@media(--medium){
+
+    .statistic{
+        @mixin container;
+    }
+
+    .statistic__desk{
+        position: relative;
+        position: relative;
+        display: flex;
+        padding: 35px 40px;
+        flex-flow: row wrap;
+        text-align: left;
+        margin-top: -23%;
+    }
+
+     .statistic__desk:after{
+        content: "";
+        position: absolute;
+        border: 20px solid transparent;	
+        border-top: 20px solid #fff; 
+        border-right: 20px solid #fff;
+        top: 40px;
+        left: -20px;
+    }
+
+    .statistic__desk-title{
+        width: 49%;
+        text-align: left;
+    }
+
+    .statistic__desk-text{
+        width: 49%;
+        margin-top: -5px;
+        text-align: left;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+
+    .statistic__text--top{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    .statistic__text--bottom{
+        display: none;
+    }
+
+    .statistic__list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .statistic__item{
+         width: 50%;
+         box-sizing: border-box;
+         padding: 35px 30px;
+         display: block;
+    }
+
+    .statistic__count{
+        font-size: 72px;
+        line-height: 78px;
+        font-weight: 700;
+    }
+
+    .statistic__count-desc{
+        padding-top: 15px;
+    }
+
+}
+
+@media(--large){
+
+    .statistic{
+        display: flex;
+    }
+
+    .statistic__desk{
+        position: relative;
+        flex-flow: column nowrap;
+        width: 320px;
+        box-sizing: border-box;
+        margin-top: -185px;
+    }
+
+    .statistic__desk:after{
+        content: "";
+        position: absolute;
+        border: 20px solid transparent;	
+        border-top: 20px solid #fff; 
+        border-right: 20px solid #fff;
+        top: 40px;
+        left: -20px;
+    }
+
+    .statistic__desk-title,
+    .statistic__desk-text{
+        width: 100%;
+    }
+
+    .statistic__desk-text{
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .statistic__text--top{
+        margin-top: auto;
+    }
+
+   .statistic__count-desc{
+       word-break: break-all;
+   }
+
+    .statistic__list{
+        width: 640px;
+        flex: 1 0;
+        margin-top: -185px;
+    }
+}

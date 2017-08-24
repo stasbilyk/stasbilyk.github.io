@@ -1,0 +1,105 @@
+.failure-wrap{
+    background: rgba(255, 255, 255, 1);
+    padding: 60px 70px 45px 70px;
+    text-align: center; 
+    display: none;
+    box-shadow: 0 50px 100px -20px rgba(0 ,0, 0, .75);
+    position: fixed;
+    top: 150px;
+}
+
+.luck-wrap{
+    background: rgba(255, 255, 255, 1);
+    padding: 60px 70px 45px 70px;
+    text-align: center; 
+    display: block;
+    box-shadow: 0 50px 100px -20px rgba(0 ,0, 0, .75);
+    position: fixed;
+    top: 150px;
+}
+
+.failure-wrap__title,
+.luck-wrap__title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.failure-wrap-text,
+.luck-wrap-text{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    display: block;
+    padding-top: 20px;
+}
+
+.btn-modal-failure,
+.btn-modal-luck{
+    background: rgba(130, 101, 80, 1);
+    margin-top: 35px;
+}
+
+.btn-modal-failure__link{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    padding: 13px 80px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.btn-modal-luck__link{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    display: none;
+}
+
+@media(--medium){
+
+    .failure-wrap{
+        background: rgba(255, 255, 255, 1);
+        padding: 60px 80px 45px 80px;
+        text-align: center; 
+        display: block;
+        box-shadow: 0 50px 100px -20px rgba(0 ,0, 0, .75);
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+    }
+
+    .luck-wrap{
+        background: rgba(255, 255, 255, 1);
+        padding: 60px 70px 45px 70px;
+        text-align: center; 
+        display: none;
+        box-shadow: 0 50px 100px -20px rgba(0 ,0, 0, .75);
+        width: 460px;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn-modal-failure__link{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #fff;
+        padding: 13px 60px;
+        text-transform: uppercase;
+        display: block;
+    }
+}

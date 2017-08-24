@@ -1,0 +1,355 @@
+.registration{
+    background: rgba(248, 245, 242 ,1);
+    padding: 30px 20px 70px 20px;
+}
+
+.registration-form{
+    margin-top: 35px;
+}
+
+.registration-form-wrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.modal-title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.input-wrap-form-label{
+    display: block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.choice-modal-form{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 40px;
+}
+
+.add-services-form{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 40px 0 0 0;
+}
+
+.input-wrap-services-form{
+    display: block;
+    position: relative;
+}
+
+.input-wrap-services-form:not(:first-child){
+    margin-top: 20px;
+}
+
+.add-services-input{
+    margin-top: 35px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.services-label{
+    padding-left: 45px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    position: relative;
+}
+
+.input-wrap{
+    margin-top: 5px;
+}
+
+.input-contact{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.choice-input{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.input-wrap-form{
+    width: 33%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.input-wrap-img{
+    display: flex;
+    margin-top: 50px;
+}
+
+input[type="radio"] + label{
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(229, 221, 213, 1);
+    background: #fff;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+input[type="radio"] + label:hover{
+    border: 1px solid rgba(213, 201, 189, 1);
+}
+
+input[type="radio"]:checked + label{
+    border: 1px solid rgba(213, 201, 189, 1);
+    background: rgba(213, 201, 189, 1);
+}
+
+input[type="radio"]:checked + label:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+               translateY(-50%);
+    border: 1px solid rgba(229, 221, 213, 1);
+    background: #fff;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.btn-form-services{
+    background: rgba(130, 101, 80, 1);
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+
+.btn-form-services:hover{
+    background: rgba(106, 77, 56, 1);
+}
+
+.btn-form-services__link:active{
+    color: rgba(255, 255, 255 , .6);
+    transition: all .1s ease-in-out;
+}
+
+.btn-form-services-disabled{
+    background: rgba(174, 174, 174, 1);
+    text-align: center;
+    border: none;
+}
+
+.btn-form-services__link{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 30px;
+    display: block;
+}
+
+@media(--medium){
+
+    .registration-wrap{
+        background: rgba(248, 245, 242 ,1);
+    }
+
+    .registration{
+        margin: 0;
+        padding: 50px 0 70px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        @mixin container;
+    }
+
+    .block-button{
+        order: 2;
+    }
+
+    .registration-form-wrap{
+        order: 3;
+    }
+
+    .registration-form{
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+
+    .input-name{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .input-contact,
+    .input-massage{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .input-contact > .input-wrap:nth-child(2){
+        margin-top: 35px;
+    }
+
+    .choice-modal-form{
+        flex-flow: column nowrap;
+        justify-content: center;
+
+    }
+
+    .choice-input{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .modal-title{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        
+    }
+
+    .input-wrap-form-label{
+        display: block;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        color: #000;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .modal-title:after{
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 1px;
+        left: 0;
+        top: 12px;
+        background: rgba(229, 221, 213, 1);
+    }
+
+    .modal-title:before{
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 1px;
+        right: 0;
+        top: 12px;
+        background: rgba(229, 221, 213, 1);
+    }
+
+    .add-services-form{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 60px 0 60px 0;
+    }
+
+    .add-services-input{
+        margin-top: 25px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .input-wrap-services-form{
+        display: block;
+        position: relative;
+        width: 50%;
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-wrap-services-form:not(:first-child){
+        margin-top: 45px;
+    }
+
+    .btn-form-services__link{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 23px 70px;
+        
+    }
+}
+
+@media(--large){
+
+    .input-name{
+        display: flex;
+        flex-flow: row nowrap;
+        
+    }
+
+    .input-contact{
+        flex-flow: row nowrap;
+    }
+
+    .input-wrap:not(:first-child){
+        margin-left: 40px;
+    }
+
+   
+    .input-contact > .input-wrap:nth-child(2){
+        margin-top: 5px;
+    }
+
+    .choice-modal-form{
+        margin-top: 70px;
+    }
+
+    .modal-title:after{
+        content: '';
+        position: absolute;
+        width: 280px;
+        height: 1px;
+        left: 0;
+        top: 12px;
+        background: rgba(229, 221, 213, 1);
+    }
+
+    .modal-title:before{
+        content: '';
+        position: absolute;
+        width: 280px;
+        height: 1px;
+        right: 0;
+        top: 12px;
+        background: rgba(229, 221, 213, 1);
+    }
+
+    .input-wrap-services-form{
+        width: 33%;
+    }
+}
