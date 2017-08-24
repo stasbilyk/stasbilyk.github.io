@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+	<!-- Basic page needs
+	============================================ -->
+
+	<meta charset="UTF-8">
+	<title>Barbershop</title>
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<!-- Mobile specific metas
+	============================================ -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Favicon
+	============================================ -->
+
+	<!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+	<!-- Libs CSS
+	============================================ -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="style/libs.min.css">
+	
+
+	<!-- Theme CSS
+	============================================ -->
+
+	<link rel="stylesheet" href="style/main.min.css">
+
+</head>
+<body>
+
+	<!-- wrapper -->
+	<div class="wrapper">
+
+		<!-- header -->
+		<header class="page-header">
+
+			<div class="page-header__logo">
+
+				<picture>
+					<source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
+					<source srcset="img/logotype-tablet.svg"  media="(min-width: 770px)">
+					<img src="img/logotype-mobile.svg" alt="">
+				</picture>
+
+			</div>
+
+			<!-- main-nav -->
+			<nav class="main-nav">
+
+				<span class="main-nav__page-title">записаться</span>
+
+				<div class="main-nav__button">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+
+				<!-- main-nav__wrap -->
+				<div class="main-nav__wrap">
+
+					<ul class="main-nav__list">
+
+						<li class="main-nav__item ">
+							<a href="index.html" class="main-nav__link">главная</a>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="our_works.html" class="main-nav__link">наши работы</a>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="registration.html" class="main-nav__link active">записаться</a>
+						</li>
+						
+						<li class="main-nav__item">
+							<a href="#footer" class="main-nav__link">контакты</a>
+						</li>
+
+					</ul>
+
+					<a href="#" class="main-nav__link-login">
+						<i class="fa fa-sign-in" aria-hidden="true"></i>
+						<span class="enter">вход</span>
+					</a>
+
+				</div> <!-- /.main-nav__wrap -->
+
+			</nav> <!-- /.main-nav -->
+
+		</header> <!-- /.header -->
+
+		
+		<!-- maincontent -->
+		<div class="maincontent">
+
+			<!-- registration-wrap -->
+			<div class="registration-wrap">
+
+				<!-- registration -->
+                <div class="registration"> 
+
+                    <h2 class="block-title">запись на стрижку</h2>
+
+                    <div class="block-button">
+						<a href="index.html" class="block-button__link">на главную</a>
+					</div>
+
+					<!-- registration-form-wrap -->
+					<div class="registration-form-wrap">
+
+						<!-- registration-form -->
+						<form class="registration-form" name="registration-form" method="post" action="">
+
+							<div class="input-name">
+
+								<div class="input-wrap">
+									<input type="text" placeholder="Фамилия" name="surname" class="input__item" required>
+								</div> 
+
+								<div class="input-wrap">
+									<input type="text" placeholder="Имя" name="name" class="input__item" required>
+								</div>
+
+								<div class="input-wrap">
+									<input type="text" placeholder="Отчество" name="patronymic" class="input__item" required>
+								</div>
+
+							</div>
+
+							<div class="input-contact">
+
+								<div class="input-wrap">
+									<input type="text" placeholder="Контактный телефон" name="tel" class="input__item" required>
+								</div>
+
+								<div class="input-wrap">
+									<input type="text" placeholder="Контактный e-mail" name="mail" class="input__item" required>
+								</div>
+
+							</div>
+
+							<div class="input-massage">
+
+								<div class="input-wrap">
+									<textarea name="massage" class="massage" placeholder="Доп. информация для мастера" cols="20" rows="4"></textarea>
+								</div>
+
+							</div>
+						
+						</form> <!-- /.registration-form -->
+
+						<!-- choice-modal-form -->
+						<form class="choice-modal-form" name="choice-modal-form" method="post" action="">
+
+							<span class="modal-title">Выберите модель бороды:</span>
+
+							<!-- choice-input -->
+							<div class="choice-input">
+
+								<div class="input-wrap-form">
+									<input checked type="radio" id="radio1" placeholder="Фамилия" name="choice">
+									<label for="radio1"><span class="input-wrap-form-label">адмирал</span></label>
+									<div class="input-wrap-img">
+										<img src="img/beard_1_mobile_registration.png" alt="">
+									</div>
+								</div> 
+
+								<div class="input-wrap-form">
+									<input type="radio" id="radio2" placeholder="Имя" name="choice">
+									<label for="radio2"><span class="input-wrap-form-label">лесоруб</span></label>
+									<div class="input-wrap-img">
+										<img src="img/beard_2_mobile_registration.png" alt="">
+									</div>
+								</div>
+
+								<div class="input-wrap-form">
+									<input type="radio" class="radio" id="radio3" placeholder="Отчество" name="choice" class="input__item" required>
+									<label for="radio3"><span class="input-wrap-form-label">полярник</span></label>
+									<div class="input-wrap-img">
+										<img src="img/beard_3_mobile_registration.png" alt="">
+									</div>
+								</div>
+
+								<div class="input-wrap-form">
+									<input type="radio" class="radio" id="radio4" placeholder="Контактный телефон" name="choice" class="input__item" required>
+									<label for="radio4"><span class="input-wrap-form-label">боярин</span></label>
+									<div class="input-wrap-img">
+										<img src="img/beard_4_mobile_registration.png" alt="">
+									</div>
+								</div>
+
+								<div class="input-wrap-form">
+									<input type="radio" class="radio" id="radio5" placeholder="Контактный e-mail" name="choice" class="input__item" required>
+									<label for="radio5"><span class="input-wrap-form-label">мудрец</span></label>
+									<div class="input-wrap-img">
+										<img src="img/beard_5_mobile_registration.png" alt="">
+									</div>
+								</div>
+
+							</div> <!-- /.choice-input -->
+
+						</form> <!-- /.choice-modal-form -->
+
+						<!-- add-services-form -->
+						<form class="add-services-form" name="add-services-form" method="post" action="">
+
+							<span class="modal-title">Дополнительные услуги:</span>
+
+							<!-- add-services-input -->
+							<div class="add-services-input">
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox1" name="choice" value="mark">
+									<label for="checkbox1"><span class="services-label">Подкрасить бороду</span></label>
+								</div>
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox2" name="choice" value="mark">
+									<label for="checkbox2"><span class="services-label">Накрутить усы</span></label>
+								</div>
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox3" name="choice" value="mark">
+									<label for="checkbox3"><span class="services-label">Причесать бороду</span></label>
+								</div>
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox4" name="choice" value="mark">
+									<label for="checkbox4"><span class="services-label">Подровнять виски</span></label>
+								</div>
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox5" name="choice" value="mark">
+									<label for="checkbox5"><span class="services-label">Убрать седину</span></label>
+								</div>
+
+								<div class="input-wrap-services-form">
+									<input type="checkbox" id="checkbox6" name="choice" value="mark">
+									<label for="checkbox6"><span class="services-label">Отполировать лысину</span></label>
+								</div>
+
+							</div> <!-- /.add-services-input -->
+
+							<button class="btn-form-services">
+								<a href="#" class="btn-form-services__link">отправить заявку</a>
+							</button>
+
+						</form> <!-- /.add-services-form -->
+
+					</div> <!-- /.registration-form-wrap -->
+
+                </div> <!-- /.registration -->
+
+            </div> <!-- /.registration-wrap -->
+
+		</div> <!-- /.maincontent -->
+
+		<!-- footer -->
+	<footer class="footer" id="footer">
+
+		<!-- contacts -->
+		<div class="contacts">
+
+			<div class="contacts__name">
+				<span class="contacts__name__item">барбершоп бородинский</span>
+			</div>
+
+			<div class="contacts__address">
+				<span class="contacts__address__item">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
+			</div>
+
+			<div class="contacts__tel">
+				<a href="tel:78125556666" class="contacts__tel__link">+7 (812) 555-66-66</a>
+			</div>
+
+		</div> <!-- /.contacts -->
+
+		<!-- social -->
+		<div class="social">
+
+			<span class="social__text">Давайте дружить!</span>
+
+			<!-- social__list -->
+			<ul class="social__list">
+
+				<li class="social__item">
+
+					<a href="#" class="social__link">
+						<i class="fa fa-vk" aria-hidden="true"></i>
+					</a>
+
+				</li>
+
+				<li class="social__item">
+
+					<a href="#" class="social__link">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+
+				</li>
+
+				<li class="social__item">
+
+					<a href="#" class="social__link">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+
+				</li>
+
+			</ul> <!-- /.social__list -->
+
+		</div> <!-- /.social -->
+
+		<!-- main-footer__copiright -->
+		<div class="main-footer__copiright">
+
+			<span class="copyright-name">Разработано:</span>
+
+			<div class="copyright-button">
+				<a href="#" class="copyright-button__link">free template</a>
+			</div>
+
+		</div> <!-- /.main-footer__copiright -->
+		
+	</footer> <!-- /.footer -->
+
+	</div> <!-- /.wrapper -->
+
+	<!-- modal-window-wrap -->
+	<div class="modal-window-wrap">
+
+		<span class="modal-window__title">личный кабинет</span>
+		<span class="modal-window-text">Введите свой логин и пароль, чтобы войти</span>
+
+		<!-- modal-window-form -->
+		<form class="modal-window-form" name="modal-window-form" method="post" action="">
+
+			<div class="input-wrap login">
+				<input type="text" placeholder="Логин" name="login" class="login__item" required>
+			</div> 
+
+			<div class="input-wrap pass">
+				<input type="password" placeholder="Пароль" name="pass" class="pass__item" required>
+			</div>
+
+			<div class="remember">
+				<input type="checkbox" id="checkbox" name="remember" value="mark">
+				<label for="checkbox"><span class="remember-label">Запомнить меня</span></label>
+				<a href="#" class="remember__link">Я забыл пароль!</a>
+			</div>
+
+			<div class="btn-form">
+
+				<button class="btn-form-enter-tablet-desctop">
+					<a href="#" class="btn-form-enter-tablet-desctop__link">войти в личный кабинет</a>
+				</button>
+
+				<button class="btn-form-enter">
+					<a href="#" class="btn-form-enter__link">войти</a>
+				</button>
+
+				<div class="btn-form-close btn-form-close-tablet_desctop">
+					<a href="#" class="btn-form-close__link">закрыть</a>
+				</div>
+				
+			</div>
+
+		</form> <!-- /.modal-window-form -->
+
+	</div> <!-- /.modal-window-wrap -->
+
+	<!-- failure-wrap -->
+	<div class="failure-wrap">
+
+		<span class="failure-wrap__title">неудача</span>
+		<span class="failure-wrap-text">Что-то пошло не так. Проверьте выделенные красным поля формы.</span>
+
+		<div class="btn-modal-failure">
+			<a href="#" class="btn-modal-failure__link">ok</a>
+		</div>
+
+	</div> <!-- /.failure-wrap -->
+
+	<!-- luck-wrap -->
+	<div class="luck-wrap">
+
+		<span class="luck-wrap__title">это успех!</span>
+		<span class="luck-wrap-text">Ваша заявка отправлена.Ожидайте, мы свяжемся с вами как только будет минутка.</span>
+		
+		<div class="btn-modal-luck">
+			<a href="#" class="btn-modal-luck__link">закрыть окно</a>
+		</div>
+
+	</div> <!-- /.luck-wrap -->
+
+
+<!-- jquery & libs
+============================================ -->
+<script>src="libs/jquery/jquery.min.js"</script>
+<script src="js/libs.min.js"></script>
+
+<!-- slick
+============================================ -->
+<script src="libs/slick/slick.min.js"></script>
+
+<!-- script plugin
+============================================ -->
+<script src="js/script.plugin.js"></script>
+
+
+<!-- script custom
+============================================ -->
+<script src="js/script.custom.js"></script>
+</body>
+</html>
